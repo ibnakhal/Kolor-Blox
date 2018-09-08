@@ -16,6 +16,7 @@ public class ColorChanger : MonoBehaviour {
 
     public int LevelCap;
 
+
     public enum ColorKind
     {
         Red,
@@ -39,6 +40,8 @@ public class ColorChanger : MonoBehaviour {
 
     private void ColorUpdate()
     {
+
+
         switch (Kolor)
         {
             case ColorKind.Red:
@@ -63,6 +66,7 @@ public class ColorChanger : MonoBehaviour {
     }
     public void ColorFunction()
     {
+
         switch (Kolor)
         {
             case ColorKind.Red:
@@ -74,13 +78,13 @@ public class ColorChanger : MonoBehaviour {
             case ColorKind.Blue:
                 CrossChange();
                 break;
-            case ColorKind.Yellow:
+            case ColorKind.Magenta:
                 LRDiagonalChange();
                 break;
             case ColorKind.Black:
                 RLDiagonalChange();
                 break;
-            case ColorKind.Magenta:
+            case ColorKind.Yellow:
                 CrossDiagonalChange();
                 break;
         }
