@@ -28,8 +28,10 @@ public class ColorChanger : MonoBehaviour {
         END,
     }
     public ColorKind Kolor;
+
     public Image i_sprite;
-	// Use this for initialization
+    public List<Sprite> i_direction;
+    // Use this for initialization
 	void Start () {
         i_sprite = this.GetComponent<Image>();
         ColorUpdate();
@@ -40,7 +42,7 @@ public class ColorChanger : MonoBehaviour {
 
     private void ColorUpdate()
     {
-
+        i_sprite.sprite = i_direction[(int)Kolor];
 
         switch (Kolor)
         {
@@ -66,7 +68,7 @@ public class ColorChanger : MonoBehaviour {
     }
     public void ColorFunction()
     {
-
+        this.GetComponentInParent<Handler>().TurnTick();
         switch (Kolor)
         {
             case ColorKind.Red:

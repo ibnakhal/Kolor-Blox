@@ -1,13 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Handler : MonoBehaviour {
     public List<ColorChanger> blocks;
     public int counter;
     public int total;
-	// Use this for initialization
-	void Start () {
+    public Text counterIdentityText;
+    public Text counterText;
+    public List<int> scores;
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -30,5 +34,12 @@ public class Handler : MonoBehaviour {
 
         Debug.Log("win");
 
+    }
+
+    public void TurnTick()
+    {
+        counter++;
+        Debug.Log(counter);
+        counterText.text = counter.ToString();
     }
 }
