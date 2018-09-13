@@ -17,76 +17,57 @@ public class ColorChanger : MonoBehaviour {
     public int LevelCap;
 
 
-    public enum ColorKind
+    public enum Direction
     {
-        Red,
-        Green,
-        Blue,
-        Yellow,
-        Black,
-        Magenta,
+        Horizontal,
+        Vertical,
+        HoriVert,
+        X,
+        UpRightDownLeft,
+        UpLeftDownRight,
         END,
     }
-    public ColorKind Kolor;
+    public Direction KolorDirect;
 
     public Image i_sprite;
     public List<Sprite> i_direction;
+    public List<Color> i_color;
     // Use this for initialization
 	void Start () {
         i_sprite = this.GetComponent<Image>();
         ColorUpdate();
-
 	}
 	
 
 
     private void ColorUpdate()
     {
-        i_sprite.sprite = i_direction[(int)Kolor];
+        i_sprite.sprite = i_direction[(int)KolorDirect];
+        i_sprite.color = i_color[(int)KolorDirect];
 
-        switch (Kolor)
-        {
-            case ColorKind.Red:
-                i_sprite.color = Color.red;
-                break;
-            case ColorKind.Green:
-                i_sprite.color = Color.green;
-                break;
-            case ColorKind.Blue:
-                i_sprite.color = Color.blue;
-                break;
-            case ColorKind.Yellow:
-                i_sprite.color = Color.yellow;
-                break;
-            case ColorKind.Black:
-                i_sprite.color = Color.black;
-                break;
-            case ColorKind.Magenta:
-                i_sprite.color = Color.magenta;
-                break;
-        }
     }
     public void ColorFunction()
     {
         this.GetComponentInParent<Handler>().TurnTick();
-        switch (Kolor)
+        this.GetComponent<AudioSource>().Play();
+        switch (KolorDirect)
         {
-            case ColorKind.Red:
+            case Direction.Horizontal:
                 HorizontalChange();
                     break;
-            case ColorKind.Green:
+            case Direction.Vertical:
                 VerticalChange();
                 break;
-            case ColorKind.Blue:
+            case Direction.HoriVert:
                 CrossChange();
                 break;
-            case ColorKind.Magenta:
+            case Direction.UpLeftDownRight:
                 LRDiagonalChange();
                 break;
-            case ColorKind.Black:
+            case Direction.UpRightDownLeft:
                 RLDiagonalChange();
                 break;
-            case ColorKind.Yellow:
+            case Direction.X:
                 CrossDiagonalChange();
                 break;
         }
@@ -210,10 +191,10 @@ public class ColorChanger : MonoBehaviour {
 
     private void Cycle()
     {
-        Kolor += 1;
-        if(Kolor == (ColorKind.END-LevelCap))
+        KolorDirect += 1;
+        if(KolorDirect == ((int)Direction.END-(Direction.END-LevelCap)))
         {
-            Kolor = 0;
+            KolorDirect = 0;
         }
     }
 }

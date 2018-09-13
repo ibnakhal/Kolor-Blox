@@ -7,10 +7,16 @@ public class Handler : MonoBehaviour
 {
     public List<ColorChanger> blocks;
     public int counter;
-    public int total;
     public Text counterIdentityText;
     public Text counterText;
     public List<int> scores;
+
+    public Color winColor;
+    private float winTimer = 00f;
+    public float winDuration;
+    public bool end;
+
+    public GameObject winPanel;
     // Use this for initialization
     void Start()
     {
@@ -25,16 +31,30 @@ public class Handler : MonoBehaviour
         {
             for (int x = 0; x < blocks.Count; x++)
             {
-                if (blocks[i].Kolor != blocks[x].Kolor)
+                Debug.Log("i is " + i + ":" + blocks[i].KolorDirect + "and x is "+ x + ":" + blocks[x].KolorDirect);
+
+
+                if (blocks[i]!=blocks[x] && blocks[i] != blocks[x])
                 {
-                    return;
+                    if (blocks[i].KolorDirect != blocks[x].KolorDirect)
+                    {
+                        return;
+                    }
                 }
+
             }
+            Debug.Log("I am skipped");
         }
 
 
-        End();
-
+        Debug.Log("Win");
+        if (!end)
+        {
+            StartCoroutine(colorLerp());
+            end = true;
+            
+        }
+        winTimer += (Time.deltaTime/winDuration);
     }
 
     public void TurnTick()
@@ -67,6 +87,29 @@ public class Handler : MonoBehaviour
             //0star
             Debug.Log("NO STARS!");
         }
+
+    }
+
+
+    public IEnumerator colorLerp()
+    {
+
+        for (int i = 0; i < blocks.Count; i++)
+        {
+            winTimer = 0;
+            Debug.Log(winTimer);
+            for (float t = 0.0f; t < 1;)
+            {
+                t += Time.deltaTime/winDuration;
+
+                blocks[i].GetComponent<Image>().color = Color.Lerp(blocks[i].i_color[(int)blocks[i].KolorDirect], winColor, Mathf.Lerp(0, 1, t));
+
+                yield return null;
+            }
+        }
+
+        End();
+
     }
 
 }
