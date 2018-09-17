@@ -141,6 +141,7 @@ public class Handler : MonoBehaviour
                 yield return null;
             }
         }
+        winText.text = ("Puzzle Complete");
         winAnim.SetBool("Play", true) ;
         End();
 

@@ -303,6 +303,7 @@
     <Compile Include="Assets\Scripts\ColorChanger.cs" />
     <Compile Include="Assets\Scripts\GameControl.cs" />
     <Compile Include="Assets\Scripts\Handler.cs" />
+    <Compile Include="Assets\Scripts\LevelLoadScript.cs" />
     <Compile Include="Assets\Scripts\MenuHandler.cs" />
     <Compile Include="Assets\Scripts\ParentNameScript.cs" />
   </ItemGroup>
