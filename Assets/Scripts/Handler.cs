@@ -2,21 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Handler : MonoBehaviour
 {
+    [Header("Level Info")]
+    public int sceneIndex;
+
+
+    [Header ("Win Condition")]
     public List<ColorChanger> blocks;
     public int counter;
-    public Text counterIdentityText;
     public Text counterText;
     public List<int> scores;
 
+    [Header("Win Announcement")]
+    public Text winText;
     public Color winColor;
     private float winTimer = 00f;
     public float winDuration;
-    public bool end;
 
     public GameObject winPanel;
+    public Animator winAnim;
+    public bool end;
+
+
+
     // Use this for initialization
     void Start()
     {
@@ -31,7 +42,7 @@ public class Handler : MonoBehaviour
         {
             for (int x = 0; x < blocks.Count; x++)
             {
-                Debug.Log("i is " + i + ":" + blocks[i].KolorDirect + "and x is "+ x + ":" + blocks[x].KolorDirect);
+                //Debug.Log("i is " + i + ":" + blocks[i].KolorDirect + "and x is "+ x + ":" + blocks[x].KolorDirect);
 
 
                 if (blocks[i]!=blocks[x] && blocks[i] != blocks[x])
@@ -66,28 +77,51 @@ public class Handler : MonoBehaviour
 
     public void End()
     {
+        print("This scene is " +SceneManager.GetActiveScene().buildIndex);
+        sceneIndex = SceneManager.GetActiveScene().buildIndex - GameControl.control.levelCullModifier;
+        print("Next scene is " + sceneIndex);
+        if (GameControl.control.levelStars.Count < sceneIndex+1)
+        {
+            GameControl.control.levelStars.Add(0);
+        }
         if (counter < scores[0])
         {
-            //3star
-            Debug.Log("THREE STARS!");
+            if (GameControl.control.levelStars[sceneIndex] < 3)
+            {
+                GameControl.control.levelStars[sceneIndex] = 3;
+                //3star
+                Debug.Log("THREE STARS!");
+            }
         }
         if (counter >= scores[0] && counter < scores[1])
         {
             //2star
             Debug.Log("TWO STARS!");
-
+            if (GameControl.control.levelStars[sceneIndex] < 2)
+            {
+                GameControl.control.levelStars[sceneIndex] = 2;
+            }
         }
         if (counter >= scores[1] && counter < scores[2])
         {
             //1star
             Debug.Log("ONE STAR!");
+            if (GameControl.control.levelStars[sceneIndex] < 1)
+            {
+                GameControl.control.levelStars[sceneIndex] = 1;
+            }
         }
-        if (counter <= scores[2])
+        if (counter >= scores[2])
         {
             //0star
             Debug.Log("NO STARS!");
+            if (GameControl.control.levelStars[sceneIndex] < 0)
+            {
+                GameControl.control.levelStars[sceneIndex] = 0;
+            }
         }
 
+        GameControl.control.Save();
     }
 
 
@@ -107,9 +141,14 @@ public class Handler : MonoBehaviour
                 yield return null;
             }
         }
-
+        winAnim.SetBool("Play", true) ;
         End();
 
     }
 
+
+    public void Next()
+    {
+        SceneManager.LoadScene(sceneIndex + 1);
+    }
 }
