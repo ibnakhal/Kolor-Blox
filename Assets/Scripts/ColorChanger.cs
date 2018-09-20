@@ -33,7 +33,8 @@ public class ColorChanger : MonoBehaviour {
     public List<Sprite> i_direction;
     public List<Color> i_color;
     // Use this for initialization
-	void Start () {
+	void Start ()
+    {
         i_sprite = this.GetComponent<Image>();
         ColorUpdate();
 	}
@@ -54,7 +55,7 @@ public class ColorChanger : MonoBehaviour {
         {
             case Direction.Horizontal:
                 HorizontalChange();
-                    break;
+                break;
             case Direction.Vertical:
                 VerticalChange();
                 break;

@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LevelLoadScript : MonoBehaviour {
+public class LevelLoadScript : MonoBehaviour
+{
     public Animator ChangePanel;
     public Text levelText;
 

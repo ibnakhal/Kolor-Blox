@@ -34,17 +34,7 @@ public class MenuHandler : MonoBehaviour {
         this.gameObject.SetActive(false);
 
     }
-    public void LoadInvoker()
-    {
-        StartCoroutine(Loader());
-    }
-    public IEnumerator Loader()
-    {
-        ChangePanel.SetBool("Play", true);
-        yield return new WaitForSeconds(1.5f);
-        GameObject go = this.transform.parent.gameObject;
-        SceneManager.LoadScene(go.name, LoadSceneMode.Single);
-    }
+
 
 
 }

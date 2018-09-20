@@ -29,48 +29,44 @@ public class Handler : MonoBehaviour
 
 
     // Use this for initialization
-    void Start()
+    private void Start()
     {
 
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-
         for (int i = 0; i < blocks.Count; i++)
         {
             for (int x = 0; x < blocks.Count; x++)
             {
                 //Debug.Log("i is " + i + ":" + blocks[i].KolorDirect + "and x is "+ x + ":" + blocks[x].KolorDirect);
 
-
-                if (blocks[i]!=blocks[x] && blocks[i] != blocks[x])
+                if (blocks[i] != blocks[x] && blocks[i] != blocks[x])
                 {
                     if (blocks[i].KolorDirect != blocks[x].KolorDirect)
                     {
                         return;
                     }
                 }
-
             }
             Debug.Log("I am skipped");
         }
-
 
         Debug.Log("Win");
         if (!end)
         {
             StartCoroutine(colorLerp());
             end = true;
-            
         }
+
         winTimer += (Time.deltaTime/winDuration);
     }
 
     public void TurnTick()
     {
-        counter++;
+        ++counter;
         Debug.Log(counter);
         counterText.text = counter.ToString();
     }
@@ -79,7 +75,7 @@ public class Handler : MonoBehaviour
     {
         print("This scene is " +SceneManager.GetActiveScene().buildIndex);
         sceneIndex = SceneManager.GetActiveScene().buildIndex - GameControl.control.levelCullModifier;
-        print("Next scene is " + sceneIndex);
+        print("Next scene is " + sceneIndex+1);
         if (GameControl.control.levelStars.Count < sceneIndex+1)
         {
             GameControl.control.levelStars.Add(0);

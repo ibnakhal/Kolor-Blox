@@ -12,6 +12,7 @@ public class GameControl : MonoBehaviour {
     public List<int> levelStars;
 
     public int levelCullModifier;
+    [SerializeField]
 
     //make sure only one ever exists. singleton design patern.
     private void Awake()
