@@ -61,12 +61,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AudioChecker.cs" />
     <Compile Include="Assets\Scripts\ColorChanger.cs" />
     <Compile Include="Assets\Scripts\GameControl.cs" />
     <Compile Include="Assets\Scripts\Handler.cs" />
     <Compile Include="Assets\Scripts\LevelLoadScript.cs" />
     <Compile Include="Assets\Scripts\MenuHandler.cs" />
     <Compile Include="Assets\Scripts\ParentNameScript.cs" />
+    <Compile Include="Assets\Scripts\Reset.cs" />
+    <Compile Include="Assets\Scripts\SettingsCaller.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Users/inakhal2/Desktop/Projects/Kolor-Blox/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

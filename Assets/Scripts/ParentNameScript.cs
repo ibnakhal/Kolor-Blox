@@ -8,7 +8,6 @@ public class ParentNameScript : MonoBehaviour {
     private Text thisText;
 
 
-
 	// Use this for initialization
 	void Start ()
     {
@@ -18,7 +17,5 @@ public class ParentNameScript : MonoBehaviour {
         Color textColor = go.GetComponent<Image>().color;
         textColor.a = 0.75f;
         thisText.color = textColor;
-
 	}
-
 }

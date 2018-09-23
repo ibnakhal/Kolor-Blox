@@ -571,7 +571,7 @@ MonoBehaviour:
   down: {fileID: 1293808137}
   downLeft: {fileID: 0}
   left: {fileID: 0}
-  LevelCap: 2
+  LevelCap: 1
   KolorDirect: 0
   i_sprite: {fileID: 0}
   i_direction:
@@ -703,6 +703,7 @@ GameObject:
   - component: {fileID: 157328307}
   - component: {fileID: 157328305}
   - component: {fileID: 157328306}
+  - component: {fileID: 157328304}
   m_Layer: 5
   m_Name: Re-Do
   m_TagString: Untagged
@@ -729,6 +730,18 @@ RectTransform:
   m_AnchoredPosition: {x: 400, y: -121.70093}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &157328304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 157328302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26d2a190efe415a40ac1ab9416d9ebdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChangePanel: {fileID: 221659985}
 --- !u!114 &157328305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1345,8 +1358,8 @@ MonoBehaviour:
   down: {fileID: 2138674299}
   downLeft: {fileID: 985852273}
   left: {fileID: 923272196}
-  LevelCap: 2
-  KolorDirect: 1
+  LevelCap: 1
+  KolorDirect: 0
   i_sprite: {fileID: 0}
   i_direction:
   - {fileID: 21300000, guid: 2af75b045706bfc469ba0e98e0b9b5c3, type: 3}
@@ -2255,7 +2268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2462,8 +2475,8 @@ MonoBehaviour:
   down: {fileID: 1166242038}
   downLeft: {fileID: 1755807830}
   left: {fileID: 2138674299}
-  LevelCap: 3
-  KolorDirect: 2
+  LevelCap: 2
+  KolorDirect: 1
   i_sprite: {fileID: 0}
   i_direction:
   - {fileID: 21300000, guid: 2af75b045706bfc469ba0e98e0b9b5c3, type: 3}
@@ -3727,8 +3740,8 @@ MonoBehaviour:
   down: {fileID: 1755807830}
   downLeft: {fileID: 0}
   left: {fileID: 0}
-  LevelCap: 2
-  KolorDirect: 1
+  LevelCap: 1
+  KolorDirect: 0
   i_sprite: {fileID: 0}
   i_direction:
   - {fileID: 21300000, guid: 2af75b045706bfc469ba0e98e0b9b5c3, type: 3}
@@ -3991,8 +4004,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: ColorFunction
+      - m_Target: {fileID: 157328304}
+        m_MethodName: ResetInvoker
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4224,7 +4237,7 @@ MonoBehaviour:
   down: {fileID: 0}
   downLeft: {fileID: 0}
   left: {fileID: 0}
-  LevelCap: 2
+  LevelCap: 1
   KolorDirect: 0
   i_sprite: {fileID: 0}
   i_direction:
@@ -4912,8 +4925,8 @@ MonoBehaviour:
   down: {fileID: 0}
   downLeft: {fileID: 0}
   left: {fileID: 1166242038}
-  LevelCap: 2
-  KolorDirect: 1
+  LevelCap: 1
+  KolorDirect: 0
   i_sprite: {fileID: 0}
   i_direction:
   - {fileID: 21300000, guid: 2af75b045706bfc469ba0e98e0b9b5c3, type: 3}
@@ -5115,7 +5128,7 @@ MonoBehaviour:
   down: {fileID: 1995106332}
   downLeft: {fileID: 1166242038}
   left: {fileID: 985852273}
-  LevelCap: 2
+  LevelCap: 1
   KolorDirect: 0
   i_sprite: {fileID: 0}
   i_direction:

@@ -26,14 +26,6 @@ public class Handler : MonoBehaviour
     public Animator winAnim;
     public bool end;
 
-
-
-    // Use this for initialization
-    private void Start()
-    {
-
-    }
-
     // Update is called once per frame
     private void Update()
     {
@@ -53,14 +45,12 @@ public class Handler : MonoBehaviour
             }
             Debug.Log("I am skipped");
         }
-
         Debug.Log("Win");
         if (!end)
         {
             StartCoroutine(colorLerp());
             end = true;
         }
-
         winTimer += (Time.deltaTime/winDuration);
     }
 
@@ -123,7 +113,6 @@ public class Handler : MonoBehaviour
 
     public IEnumerator colorLerp()
     {
-
         for (int i = 0; i < blocks.Count; i++)
         {
             winTimer = 0;
@@ -131,16 +120,13 @@ public class Handler : MonoBehaviour
             for (float t = 0.0f; t < 1;)
             {
                 t += Time.deltaTime/winDuration;
-
                 blocks[i].GetComponent<Image>().color = Color.Lerp(blocks[i].i_color[(int)blocks[i].KolorDirect], winColor, Mathf.Lerp(0, 1, t));
-
                 yield return null;
             }
         }
         winText.text = ("Puzzle Complete");
         winAnim.SetBool("Play", true) ;
         End();
-
     }
 
 

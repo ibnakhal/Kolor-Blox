@@ -6,8 +6,11 @@ using UnityEngine.UI;
 
 public class LevelLoadScript : MonoBehaviour
 {
-    public Animator ChangePanel;
+    public Animator changePanel;
+    public Animator menuPanel;
     public Text levelText;
+    [SerializeField]
+    private bool autoLoad = true;
 
     public void LoadInvoker()
     {
@@ -15,16 +18,27 @@ public class LevelLoadScript : MonoBehaviour
     }
     public IEnumerator Loader()
     {
-
-        GameObject go = this.transform.parent.gameObject;
-        string name = go.name;
+        string name;
+        if (!autoLoad)
+        {
+            name = ("MenuSet");
+        }
+        else
+        {
+            GameObject go = this.transform.parent.gameObject;
+            name = go.name;
+        }
         if (levelText != null)
         {
             levelText.text = name;
         }
-        if (ChangePanel != null)
+        if (changePanel != null)
         {
-            ChangePanel.SetBool("Play", true);
+            changePanel.SetBool("Play", true);
+        }
+        if(menuPanel != null)
+        {
+            menuPanel.SetBool("Play", true);
         }
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(name, LoadSceneMode.Single);

@@ -16,7 +16,6 @@ public class ColorChanger : MonoBehaviour {
 
     public int LevelCap;
 
-
     public enum Direction
     {
         Horizontal,
@@ -32,164 +31,64 @@ public class ColorChanger : MonoBehaviour {
     public Image i_sprite;
     public List<Sprite> i_direction;
     public List<Color> i_color;
-    // Use this for initialization
 	void Start ()
     {
         i_sprite = this.GetComponent<Image>();
         ColorUpdate();
 	}
-	
-
-
     private void ColorUpdate()
     {
         i_sprite.sprite = i_direction[(int)KolorDirect];
         i_sprite.color = i_color[(int)KolorDirect];
-
     }
     public void ColorFunction()
     {
         this.GetComponentInParent<Handler>().TurnTick();
         this.GetComponent<AudioSource>().Play();
+
         switch (KolorDirect)
         {
             case Direction.Horizontal:
-                HorizontalChange();
+                Change(left);
+                Change(right);
                 break;
             case Direction.Vertical:
-                VerticalChange();
+                Change(up);
+                Change(down);
                 break;
             case Direction.HoriVert:
-                CrossChange();
+                Change(up);
+                Change(down);
+                Change(left);
+                Change(right);
                 break;
             case Direction.UpLeftDownRight:
-                LRDiagonalChange();
+                Change(upLeft);
+                Change(downRight);
                 break;
             case Direction.UpRightDownLeft:
-                RLDiagonalChange();
+                Change(upRight);
+                Change(downLeft);
                 break;
             case Direction.X:
-                CrossDiagonalChange();
+                Change(upRight);
+                Change(downLeft);
+                Change(upLeft);
+                Change(downRight);
                 break;
         }
-    }
-
-    private void HorizontalChange()
-    {
         Cycle();
         ColorUpdate();
-        if (left != null)
-        {
-            left.GetComponent<ColorChanger>().Cycle();
-            left.GetComponent<ColorChanger>().ColorUpdate();
-        }
-        if(right != null)
-        {
-            right.GetComponent<ColorChanger>().Cycle();
-            right.GetComponent<ColorChanger>().ColorUpdate();
-        }
     }
 
-    private void VerticalChange()
+    private void Change(GameObject target)
     {
-        Cycle();
-        ColorUpdate();
-        if (up != null)
+        if (target != null)
         {
-            up.GetComponent<ColorChanger>().Cycle(); 
-            up.GetComponent<ColorChanger>().ColorUpdate();
-        }
-        if (down != null)
-        {
-            down.GetComponent<ColorChanger>().Cycle();
-            down.GetComponent<ColorChanger>().ColorUpdate();
+            target.GetComponent<ColorChanger>().Cycle();
+            target.GetComponent<ColorChanger>().ColorUpdate();
         }
     }
-
-    private void CrossChange()
-    {
-        Cycle();
-        ColorUpdate();
-        if (left != null)
-        {
-            left.GetComponent<ColorChanger>().Cycle();
-            left.GetComponent<ColorChanger>().ColorUpdate();
-        }
-        if (right != null)
-        {
-            right.GetComponent<ColorChanger>().Cycle();
-            right.GetComponent<ColorChanger>().ColorUpdate();
-        }
-        if (up != null)
-        {
-            up.GetComponent<ColorChanger>().Cycle();
-            up.GetComponent<ColorChanger>().ColorUpdate();
-        }
-        if (down != null)
-        {
-            down.GetComponent<ColorChanger>().Cycle();
-            down.GetComponent<ColorChanger>().ColorUpdate();
-        }
-    }
-
-    private void LRDiagonalChange()
-    {
-        Cycle();
-        ColorUpdate();
-        if (upLeft != null)
-        {
-            upLeft.GetComponent<ColorChanger>().Cycle();
-            upLeft.GetComponent<ColorChanger>().ColorUpdate();
-        }
-        if (downRight != null)
-        {
-            downRight.GetComponent<ColorChanger>().Cycle();
-            downRight.GetComponent<ColorChanger>().ColorUpdate();
-        }
-    }
-  
-    private void RLDiagonalChange()
-    {
-        Cycle();
-        ColorUpdate();
-        if (upRight != null)
-        {
-            upRight.GetComponent<ColorChanger>().Cycle();
-            upRight.GetComponent<ColorChanger>().ColorUpdate();
-        }
-        if (downLeft != null)
-        {
-            downLeft.GetComponent<ColorChanger>().Cycle();
-            downLeft.GetComponent<ColorChanger>().ColorUpdate();
-        }
-    }
-
-    private void CrossDiagonalChange()
-    {
-        Cycle();
-        ColorUpdate();
-        if (upRight != null)
-        {
-            upRight.GetComponent<ColorChanger>().Cycle();
-            upRight.GetComponent<ColorChanger>().ColorUpdate();
-        }
-        if (downLeft != null)
-        {
-            downLeft.GetComponent<ColorChanger>().Cycle();
-            downLeft.GetComponent<ColorChanger>().ColorUpdate();
-        }
-        if (upLeft != null)
-        {
-            upLeft.GetComponent<ColorChanger>().Cycle();
-            upLeft.GetComponent<ColorChanger>().ColorUpdate();
-        }
-        if (downRight != null)
-        {
-            downRight.GetComponent<ColorChanger>().Cycle();
-            downRight.GetComponent<ColorChanger>().ColorUpdate();
-        }
-    }
-
     private void Cycle()
     {
         KolorDirect += 1;

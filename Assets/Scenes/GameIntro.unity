@@ -428,8 +428,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &16250700
 GameObject:
   m_ObjectHideFlags: 0
@@ -867,8 +869,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &45785983
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,8 +1021,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &49249749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1451,8 +1457,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &65515563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1502,8 +1510,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!114 &65515566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1751,8 +1761,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &88538346
 GameObject:
   m_ObjectHideFlags: 0
@@ -2068,8 +2080,116 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
+--- !u!1001 &98052486
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 373637172}
+    m_Modifications:
+    - target: {fileID: 224184139627339468, guid: d291f1d3080346f49aebb0937bdb4997,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224184139627339468, guid: d291f1d3080346f49aebb0937bdb4997,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224184139627339468, guid: d291f1d3080346f49aebb0937bdb4997,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224184139627339468, guid: d291f1d3080346f49aebb0937bdb4997,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224184139627339468, guid: d291f1d3080346f49aebb0937bdb4997,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224184139627339468, guid: d291f1d3080346f49aebb0937bdb4997,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224184139627339468, guid: d291f1d3080346f49aebb0937bdb4997,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224184139627339468, guid: d291f1d3080346f49aebb0937bdb4997,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224184139627339468, guid: d291f1d3080346f49aebb0937bdb4997,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224184139627339468, guid: d291f1d3080346f49aebb0937bdb4997,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.12548828
+      objectReference: {fileID: 0}
+    - target: {fileID: 224184139627339468, guid: d291f1d3080346f49aebb0937bdb4997,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224184139627339468, guid: d291f1d3080346f49aebb0937bdb4997,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224184139627339468, guid: d291f1d3080346f49aebb0937bdb4997,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.09625
+      objectReference: {fileID: 0}
+    - target: {fileID: 224184139627339468, guid: d291f1d3080346f49aebb0937bdb4997,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.81000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 224184139627339468, guid: d291f1d3080346f49aebb0937bdb4997,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.90375
+      objectReference: {fileID: 0}
+    - target: {fileID: 224184139627339468, guid: d291f1d3080346f49aebb0937bdb4997,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224184139627339468, guid: d291f1d3080346f49aebb0937bdb4997,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224184139627339468, guid: d291f1d3080346f49aebb0937bdb4997,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 95099768768009088, guid: d291f1d3080346f49aebb0937bdb4997, type: 2}
+  m_SourcePrefab: {fileID: 100100000, guid: d291f1d3080346f49aebb0937bdb4997, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!224 &98052487 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 224184139627339468, guid: d291f1d3080346f49aebb0937bdb4997,
+    type: 2}
+  m_PrefabInternal: {fileID: 98052486}
 --- !u!1 &100012340
 GameObject:
   m_ObjectHideFlags: 0
@@ -2118,8 +2238,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChangePanel: {fileID: 0}
-  panelClose: {fileID: 0}
-  panelOpen: {fileID: 0}
   setText: {fileID: 0}
 --- !u!114 &100012343
 MonoBehaviour:
@@ -2303,8 +2421,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &106675643
 GameObject:
   m_ObjectHideFlags: 0
@@ -2687,8 +2807,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &113159497
 GameObject:
   m_ObjectHideFlags: 0
@@ -3313,8 +3435,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &147260205
 GameObject:
   m_ObjectHideFlags: 0
@@ -3463,8 +3587,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &151250467
 GameObject:
   m_ObjectHideFlags: 0
@@ -3593,6 +3719,7 @@ GameObject:
   - component: {fileID: 157328307}
   - component: {fileID: 157328305}
   - component: {fileID: 157328306}
+  - component: {fileID: 157328304}
   m_Layer: 5
   m_Name: Re-Do
   m_TagString: Untagged
@@ -3619,6 +3746,19 @@ RectTransform:
   m_AnchoredPosition: {x: 400, y: -121.70093}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &157328304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 157328302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26d2a190efe415a40ac1ab9416d9ebdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChangePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
 --- !u!114 &157328305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4478,8 +4618,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &221659979
 GameObject:
   m_ObjectHideFlags: 0
@@ -4713,8 +4855,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &237158806
 GameObject:
   m_ObjectHideFlags: 0
@@ -4863,8 +5007,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 1035314455}
+  autoLoad: 1
 --- !u!1 &247088273
 GameObject:
   m_ObjectHideFlags: 0
@@ -5364,8 +5510,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &308865466
 GameObject:
   m_ObjectHideFlags: 0
@@ -5881,8 +6029,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &334553297
 GameObject:
   m_ObjectHideFlags: 0
@@ -6265,8 +6415,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &350820468
 GameObject:
   m_ObjectHideFlags: 0
@@ -6481,6 +6633,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 161361178}
+  - {fileID: 98052487}
   - {fileID: 953839407}
   m_Father: {fileID: 1604188746}
   m_RootOrder: 0
@@ -6672,8 +6825,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &385768839
 GameObject:
   m_ObjectHideFlags: 0
@@ -6813,8 +6968,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!114 &394351103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7383,8 +7540,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!114 &451293835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7536,8 +7695,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChangePanel: {fileID: 0}
-  panelClose: {fileID: 0}
-  panelOpen: {fileID: 0}
   setText: {fileID: 1016586436}
 --- !u!114 &487314582
 MonoBehaviour:
@@ -7806,8 +7963,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChangePanel: {fileID: 0}
-  panelClose: {fileID: 7400000, guid: dd48938ab94492441acd11cc66eb845b, type: 2}
-  panelOpen: {fileID: 7400000, guid: 0043f75c08a42584ba6305e382b8d5ea, type: 2}
   setText: {fileID: 1016586436}
 --- !u!114 &507170508
 MonoBehaviour:
@@ -8762,8 +8917,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &625031107
 GameObject:
   m_ObjectHideFlags: 0
@@ -9079,8 +9236,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &642538695
 GameObject:
   m_ObjectHideFlags: 0
@@ -9130,8 +9289,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!114 &642538698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9614,8 +9775,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!114 &667256472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9764,8 +9927,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!114 &677875700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10631,8 +10796,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &740491544
 GameObject:
   m_ObjectHideFlags: 0
@@ -11154,8 +11321,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &765774682
 GameObject:
   m_ObjectHideFlags: 0
@@ -12038,8 +12207,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &845426809
 GameObject:
   m_ObjectHideFlags: 0
@@ -12188,8 +12359,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &849330671
 GameObject:
   m_ObjectHideFlags: 0
@@ -12239,8 +12412,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!114 &849330674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12488,8 +12663,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &871901976
 GameObject:
   m_ObjectHideFlags: 0
@@ -12804,50 +12981,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
---- !u!1001 &889971424
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4979761492885390, guid: 557094222ff4f4e4091f6bc6098cad9b, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 232.22304
-      objectReference: {fileID: 0}
-    - target: {fileID: 4979761492885390, guid: 557094222ff4f4e4091f6bc6098cad9b, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 356.1267
-      objectReference: {fileID: 0}
-    - target: {fileID: 4979761492885390, guid: 557094222ff4f4e4091f6bc6098cad9b, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -5.5615196
-      objectReference: {fileID: 0}
-    - target: {fileID: 4979761492885390, guid: 557094222ff4f4e4091f6bc6098cad9b, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4979761492885390, guid: 557094222ff4f4e4091f6bc6098cad9b, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4979761492885390, guid: 557094222ff4f4e4091f6bc6098cad9b, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4979761492885390, guid: 557094222ff4f4e4091f6bc6098cad9b, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4979761492885390, guid: 557094222ff4f4e4091f6bc6098cad9b, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 557094222ff4f4e4091f6bc6098cad9b, type: 2}
-  m_IsPrefabAsset: 0
+  autoLoad: 1
 --- !u!1 &894314578
 GameObject:
   m_ObjectHideFlags: 0
@@ -12996,8 +13133,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &903469282
 GameObject:
   m_ObjectHideFlags: 0
@@ -13251,8 +13390,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &914315565
 GameObject:
   m_ObjectHideFlags: 0
@@ -14066,7 +14207,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 373637172}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.09625, y: 0.81000006}
   m_AnchorMax: {x: 0.90375, y: 1}
@@ -14156,8 +14297,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!114 &965201533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14856,8 +14999,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &993791282
 GameObject:
   m_ObjectHideFlags: 0
@@ -15290,8 +15435,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1014276891
 GameObject:
   m_ObjectHideFlags: 0
@@ -15499,6 +15646,7 @@ GameObject:
   - component: {fileID: 1019998024}
   - component: {fileID: 1019998022}
   - component: {fileID: 1019998023}
+  - component: {fileID: 1019998021}
   m_Layer: 5
   m_Name: Forward
   m_TagString: Untagged
@@ -15525,6 +15673,21 @@ RectTransform:
   m_AnchoredPosition: {x: 600, y: -121.70093}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1019998021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1019998019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
+  levelText: {fileID: 0}
+  autoLoad: 0
 --- !u!114 &1019998022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15638,8 +15801,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChangePanel: {fileID: 0}
-  panelClose: {fileID: 7400000, guid: dd48938ab94492441acd11cc66eb845b, type: 2}
-  panelOpen: {fileID: 7400000, guid: 0043f75c08a42584ba6305e382b8d5ea, type: 2}
   setText: {fileID: 1016586436}
 --- !u!114 &1022550730
 MonoBehaviour:
@@ -15777,8 +15938,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChangePanel: {fileID: 0}
-  panelClose: {fileID: 7400000, guid: dd48938ab94492441acd11cc66eb845b, type: 2}
-  panelOpen: {fileID: 7400000, guid: 0043f75c08a42584ba6305e382b8d5ea, type: 2}
   setText: {fileID: 1016586436}
 --- !u!114 &1031887939
 MonoBehaviour:
@@ -16092,8 +16251,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1056108701
 GameObject:
   m_ObjectHideFlags: 0
@@ -16359,8 +16520,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1071959613
 GameObject:
   m_ObjectHideFlags: 0
@@ -16675,8 +16838,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1102458514
 GameObject:
   m_ObjectHideFlags: 0
@@ -16825,8 +16990,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1105433046
 GameObject:
   m_ObjectHideFlags: 0
@@ -16975,8 +17142,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1122962198
 GameObject:
   m_ObjectHideFlags: 0
@@ -18495,8 +18664,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1234140817
 GameObject:
   m_ObjectHideFlags: 0
@@ -18844,8 +19015,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChangePanel: {fileID: 0}
-  panelClose: {fileID: 7400000, guid: dd48938ab94492441acd11cc66eb845b, type: 2}
-  panelOpen: {fileID: 7400000, guid: 0043f75c08a42584ba6305e382b8d5ea, type: 2}
   setText: {fileID: 1016586436}
 --- !u!114 &1250474743
 MonoBehaviour:
@@ -20002,8 +20171,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1366737089
 GameObject:
   m_ObjectHideFlags: 0
@@ -20337,8 +20508,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!114 &1372287203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20487,8 +20660,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!114 &1390502052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20903,8 +21078,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1406531326
 GameObject:
   m_ObjectHideFlags: 0
@@ -21043,8 +21220,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!114 &1441466550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21292,8 +21471,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1455036546
 GameObject:
   m_ObjectHideFlags: 0
@@ -21676,8 +21857,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1501297538
 GameObject:
   m_ObjectHideFlags: 0
@@ -22599,8 +22782,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1543432963
 GameObject:
   m_ObjectHideFlags: 0
@@ -22767,8 +22952,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!114 &1552751353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23183,8 +23370,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1579997358
 GameObject:
   m_ObjectHideFlags: 0
@@ -23395,8 +23584,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1597140602
 GameObject:
   m_ObjectHideFlags: 0
@@ -23975,8 +24166,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1610423659
 GameObject:
   m_ObjectHideFlags: 0
@@ -24125,8 +24318,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1618113001
 GameObject:
   m_ObjectHideFlags: 0
@@ -24676,8 +24871,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1672110321
 GameObject:
   m_ObjectHideFlags: 0
@@ -24993,8 +25190,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1688636962
 GameObject:
   m_ObjectHideFlags: 0
@@ -25398,8 +25597,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1715225594
 GameObject:
   m_ObjectHideFlags: 0
@@ -25890,8 +26091,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: ColorFunction
+      - m_Target: {fileID: 157328304}
+        m_MethodName: ResetInvoker
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25948,8 +26149,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1745839435
 GameObject:
   m_ObjectHideFlags: 0
@@ -26951,8 +27154,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!114 &1766459603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27703,8 +27908,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1816168677
 GameObject:
   m_ObjectHideFlags: 0
@@ -27853,8 +28060,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1824126014
 GameObject:
   m_ObjectHideFlags: 0
@@ -28120,8 +28329,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1835365297
 GameObject:
   m_ObjectHideFlags: 0
@@ -28972,8 +29183,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1972525713
 GameObject:
   m_ObjectHideFlags: 0
@@ -29274,8 +29487,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &1998447002
 GameObject:
   m_ObjectHideFlags: 0
@@ -29658,8 +29873,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &2067931992
 GameObject:
   m_ObjectHideFlags: 0
@@ -30476,8 +30693,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e10d0d7aa411346989992e75fdc235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePanel: {fileID: 0}
+  changePanel: {fileID: 0}
+  menuPanel: {fileID: 0}
   levelText: {fileID: 0}
+  autoLoad: 1
 --- !u!1 &2133674598
 GameObject:
   m_ObjectHideFlags: 0
