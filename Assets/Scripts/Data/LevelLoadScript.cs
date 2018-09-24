@@ -21,7 +21,7 @@ public class LevelLoadScript : MonoBehaviour
         string name;
         if (!autoLoad)
         {
-            name = ("MenuSet");
+            name = ("Main Menu");
         }
         else
         {

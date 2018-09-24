@@ -254,6 +254,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 224441941858565222, guid: 3184e7efb3ff70542a44b69e96840911,
     type: 2}
   m_PrefabInternal: {fileID: 1320799460}
+--- !u!1 &124123882 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1821386473742712, guid: c90850ca3f946b64fa00fc4d5c6c0c35,
+    type: 2}
+  m_PrefabInternal: {fileID: 218783772}
 --- !u!1 &125278057
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,6 +668,32 @@ Prefab:
       propertyPath: ChangePanel
       value: 
       objectReference: {fileID: 221659985}
+    - target: {fileID: 114305108255832812, guid: c90850ca3f946b64fa00fc4d5c6c0c35,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1250474737}
+    - target: {fileID: 114687275790308670, guid: c90850ca3f946b64fa00fc4d5c6c0c35,
+        type: 2}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114113993208044860, guid: c90850ca3f946b64fa00fc4d5c6c0c35,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d2f94274cb3c9384cb2b9c22d20ac10e,
+        type: 3}
+    - target: {fileID: 114235131172467280, guid: c90850ca3f946b64fa00fc4d5c6c0c35,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114807800411738148, guid: c90850ca3f946b64fa00fc4d5c6c0c35,
+        type: 2}
+      propertyPath: setText
+      value: 
+      objectReference: {fileID: 1897443618}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c90850ca3f946b64fa00fc4d5c6c0c35, type: 2}
   m_IsPrefabAsset: 0
@@ -2491,7 +2522,7 @@ GameObject:
   - component: {fileID: 1250474742}
   - component: {fileID: 1250474743}
   m_Layer: 5
-  m_Name: Play Area
+  m_Name: Puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3284,6 +3315,41 @@ Prefab:
       propertyPath: m_Name
       value: Top Panel (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114841865326009482, guid: 3184e7efb3ff70542a44b69e96840911,
+        type: 2}
+      propertyPath: ChangePanel
+      value: 
+      objectReference: {fileID: 221659985}
+    - target: {fileID: 114841865326009482, guid: 3184e7efb3ff70542a44b69e96840911,
+        type: 2}
+      propertyPath: setText
+      value: 
+      objectReference: {fileID: 1897443618}
+    - target: {fileID: 114212659654199034, guid: 3184e7efb3ff70542a44b69e96840911,
+        type: 2}
+      propertyPath: ChangePanel
+      value: 
+      objectReference: {fileID: 221659985}
+    - target: {fileID: 114877092795959478, guid: 3184e7efb3ff70542a44b69e96840911,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1250474737}
+    - target: {fileID: 114877092795959478, guid: 3184e7efb3ff70542a44b69e96840911,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 124123882}
+    - target: {fileID: 114354455392381122, guid: 3184e7efb3ff70542a44b69e96840911,
+        type: 2}
+      propertyPath: changePanel
+      value: 
+      objectReference: {fileID: 221659985}
+    - target: {fileID: 114354455392381122, guid: 3184e7efb3ff70542a44b69e96840911,
+        type: 2}
+      propertyPath: levelText
+      value: 
+      objectReference: {fileID: 1897443618}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3184e7efb3ff70542a44b69e96840911, type: 2}
   m_IsPrefabAsset: 0

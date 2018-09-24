@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelStars: 
-  levelCullModifier: 0
+  levelCullModifier: 2
   soundVol: 1
   musicVol: 1
 --- !u!114 &114944596426040868
