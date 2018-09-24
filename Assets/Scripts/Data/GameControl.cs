@@ -59,13 +59,15 @@ public class GameControl : MonoBehaviour {
             PlayerData data = (PlayerData)bf.Deserialize(file);
             file.Close();
             levelStars = data.stars;
+            soundVol = data.soundVol;
+            musicVol = data.musicVol;
         }
     }
 
 
-    public void SoundOn()
+    public void SoundOn(bool toggleState)
     {
-        if (soundVol != 1)
+        if (toggleState)
         {
             soundVol = 1;
         }
@@ -75,9 +77,9 @@ public class GameControl : MonoBehaviour {
         }
         Save();
     }
-    public void MusicOn()
+    public void MusicOn(bool toggleState)
     {
-        if (musicVol != 1)
+        if (toggleState)
         {
             musicVol = 1;
         }
