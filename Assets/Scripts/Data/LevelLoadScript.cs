@@ -11,6 +11,9 @@ public class LevelLoadScript : MonoBehaviour
     public Text levelText;
     [SerializeField]
     private bool autoLoad = true;
+    [SerializeField]
+    string name;
+
 
     public void LoadInvoker()
     {
@@ -18,7 +21,6 @@ public class LevelLoadScript : MonoBehaviour
     }
     public IEnumerator Loader()
     {
-        string name;
         if (!autoLoad)
         {
             name = ("Main Menu");
