@@ -63,49 +63,45 @@ public class Handler : MonoBehaviour
 
     public void End()
     {
-        print("This scene is " +SceneManager.GetActiveScene().buildIndex);
+        print("This scene is " + SceneManager.GetActiveScene().buildIndex);
         sceneIndex = SceneManager.GetActiveScene().buildIndex - GameControl.control.levelCullModifier;
-        print("Next scene is " + sceneIndex+1);
-        if (GameControl.control.levelStars.Count < sceneIndex+1)
-        {
-            GameControl.control.levelStars.Add(0);
-        }
+        print("Next scene is " + sceneIndex + 1);
+
         if (counter < scores[0])
         {
-            if (GameControl.control.levelStars[sceneIndex] < 3)
+            if (GameControl.control.levelStars[sceneIndex].score < 3)
             {
-                GameControl.control.levelStars[sceneIndex] = 3;
-                //3star
+                GameControl.control.levelStars[sceneIndex].score = 3;
                 Debug.Log("THREE STARS!");
             }
         }
         if (counter >= scores[0] && counter < scores[1])
         {
-            //2star
             Debug.Log("TWO STARS!");
-            if (GameControl.control.levelStars[sceneIndex] < 2)
+            if (GameControl.control.levelStars[sceneIndex].score < 2)
             {
-                GameControl.control.levelStars[sceneIndex] = 2;
+                GameControl.control.levelStars[sceneIndex].score = 2;
             }
         }
         if (counter >= scores[1] && counter < scores[2])
         {
-            //1star
             Debug.Log("ONE STAR!");
-            if (GameControl.control.levelStars[sceneIndex] < 1)
+            if (GameControl.control.levelStars[sceneIndex].score < 1)
             {
-                GameControl.control.levelStars[sceneIndex] = 1;
+                GameControl.control.levelStars[sceneIndex].score = 1;
             }
         }
         if (counter >= scores[2])
         {
-            //0star
             Debug.Log("NO STARS!");
-            if (GameControl.control.levelStars[sceneIndex] < 0)
+            if (GameControl.control.levelStars[sceneIndex].score < 0)
             {
-                GameControl.control.levelStars[sceneIndex] = 0;
+                GameControl.control.levelStars[sceneIndex].score = 0;
             }
         }
+
+        //make the next level in the build index activateable in the level select
+        GameControl.control.levelStars[sceneIndex+1].active = true;
 
         GameControl.control.Save();
     }

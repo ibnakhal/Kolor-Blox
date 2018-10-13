@@ -10,9 +10,13 @@ public class LevelEnabler : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        for (int i = 0; i < GameControl.control.levelStars.Count+1; i++)
+        for (int i = 0; i < GameControl.control.levelStars.Count; i++)
         {
-            levels[i].GetComponent<Button>().enabled = true;
+            if (GameControl.control.levelStars[i].active)
+            {
+                levels[i].GetComponent<Button>().interactable = true;
+                Debug.Log("Level number " + i + "is processed");
+            }
         }
 	}
 }

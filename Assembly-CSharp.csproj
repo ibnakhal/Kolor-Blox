@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\AudioChecker.cs" />
+    <Compile Include="Assets\Scripts\Data\ButtonEditorNamer.cs" />
     <Compile Include="Assets\Scripts\Data\GameControl.cs" />
     <Compile Include="Assets\Scripts\Data\LevelLoadScript.cs" />
     <Compile Include="Assets\Scripts\Gameplay\ColorChanger.cs" />

@@ -9,7 +9,7 @@ public class GameControl : MonoBehaviour {
 
     public static GameControl control;
 
-    public List<int> levelStars;
+    public List<LevelData> levelStars;
 
     public int levelCullModifier;
 
@@ -96,8 +96,15 @@ public class GameControl : MonoBehaviour {
 class PlayerData
 {
     //holdable data
-    public List<int> stars;
+    public List<LevelData> stars;
     public int soundVol;
     public int musicVol;
 
+}
+
+[Serializable]
+public class LevelData
+{
+    public int score;
+    public bool active;
 }
